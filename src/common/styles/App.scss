@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  padding: 0 5%;
+}
+
+// import Pages
+@import "../../components/useReducer/TodoApp.scss";
+
+
+// import Components
+// @import "../../components/inputSearch/inputSearch";

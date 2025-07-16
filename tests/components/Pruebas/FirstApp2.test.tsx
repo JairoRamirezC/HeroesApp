@@ -27,4 +27,11 @@ describe('Testing FirstApp Improved', () => {
     const buttonElement = screen.getAllByRole('button');
     expect(buttonElement[2]?.textContent).toContain(text);
   });
+
+  test('button add should be have "Sumar +1" in the text', () => {
+    const textButton = 'Sumar +1';
+    render(<FirstApp />);
+    const btnElement = screen.getAllByRole('button');
+    expect(btnElement[0].textContent).toBe(textButton);
+  });
 })

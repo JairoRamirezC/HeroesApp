@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-18.04
     # runs-on: ubuntu-latest
     steps:
+      - name: Listar archivos
+        run: ls -l
       - name: Checkout to code
         uses: actions/checkout@v4
       - name: Install node.js

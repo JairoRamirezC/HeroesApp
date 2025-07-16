@@ -1,6 +1,6 @@
 import js from "@eslint/js";
 import globals from "globals";
-import ts from "typescript-eslint";
+import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import { defineConfig } from "eslint/config";
@@ -8,7 +8,8 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   js.configs.recommended,
-  ...ts.configs.recommended,
+  ...tseslint.configs.recommended,
+  pluginReact.configs.flat.recommended,
   { 
     files: ["**/*.{js,jsx,ts,tsx}"],
     ignores: ['dist'],

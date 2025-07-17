@@ -7,11 +7,9 @@ on:
 
 jobs:
   pre-deploy:
-    runs-on: ubuntu-20.04
-    # runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    # runs-on: ubuntu-20.04
     steps:
-      - name: Listar archivos
-        run: ls -l
       - name: Checkout to code
         uses: actions/checkout@v4
       - name: Install node.js

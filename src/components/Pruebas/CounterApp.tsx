@@ -8,7 +8,7 @@ interface FirstAppProps {
 }
 
 export const CounterApp = memo(({title = 'No hay titulo', name, subTitle}: FirstAppProps) => {
-  // console.log(title);
+  console.log(title);
   // console.log(name);
   // console.log(subTitle);
 

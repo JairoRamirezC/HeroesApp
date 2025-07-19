@@ -35,7 +35,6 @@ jobs:
         with:
           timeout_minutes: 10
           max_attempts: 3
-          shell: bash
           command: npm run test --if-present
       - name: Build project
         if: ${{ github.event_name != 'pull_request' }}

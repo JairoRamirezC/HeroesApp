@@ -30,7 +30,6 @@ jobs:
       - name: Run lint
         run: npm run lint --if-present
       - name: Run tests
-        # run: npm run test --if-present
         uses: nick-fields/retry@v3
         with:
           timeout_minutes: 10
